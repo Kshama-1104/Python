@@ -34,7 +34,7 @@ Every program is **well-commented** with clear explanations — learn the _what_
 
 <div align="center">
 
-![Python Concepts](assets/concepts-overview.svg)
+
 
 </div>
 
@@ -256,7 +256,6 @@ else:
 
 <div align="center">
 
-![Learning Roadmap](assets/learning-roadmap.svg)
 
 </div>
 
@@ -298,9 +297,9 @@ Contributions are welcome! Here's how you can help:
 
 ---
 
-## ⭐ Show Your Support
+## 👤 Creator
 
-If this repository helped you learn Python, give it a **star** ⭐ — it motivates more content!
+- 💼 **Created by**: Kshama Mishra
 
 ---
 
@@ -308,6 +307,13 @@ If this repository helped you learn Python, give it a **star** ⭐ — it motiva
 
 ![Footer](assets/footer-badge.svg)
 
-<sub>Built with ❤️ for the Python learning community</sub>
+
+
+<div align="center">
+
+
+Created by Kshama Mishra
+
+</div>
 
 </div>
