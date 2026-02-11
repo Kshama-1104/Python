@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Test - Python Programming</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #1f2937;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #6b7280;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        
+        .status {
+            background: #dbeafe;
+            border-left: 4px solid #3b82f6;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        
+        .status h2 {
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+        
+        .status p {
+            color: #1f2937;
+            line-height: 1.6;
+        }
+        
+        .image-section {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: #f9fafb;
+            border-radius: 12px;
+            border: 2px solid #e5e7eb;
+        }
+        
+        .image-section h3 {
+            color: #1f2937;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3b82f6;
+            display: inline-block;
+        }
+        
+        .image-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-top: 15px;
+        }
+        
+        .status-badge.success {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        
+        .status-badge.error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        
+        .checklist {
+            background: #f0fdf4;
+            border: 2px solid #86efac;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+        
+        .checklist h3 {
+            color: #166534;
+            margin-bottom: 15px;
+        }
+        
+        .checklist ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .checklist li {
+            padding: 10px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 6px;
+            color: #1f2937;
+        }
+        
+        .checklist li::before {
+            content: "✅ ";
+            margin-right: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #e5e7eb;
+            color: #6b7280;
+        }
+        
+        .error-info {
+            background: #fef2f2;
+            border-left: 4px solid #ef4444;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .error-info h4 {
+            color: #991b1b;
+            margin-bottom: 10px;
+        }
+        
+        .error-info p {
+            color: #1f2937;
+            line-height: 1.6;
+        }
+        
+        code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #dc2626;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 SVG Image Test</h1>
+        <p class="subtitle">Python Programming Repository - Visual Assets Verification</p>
+        
+        <div class="status">
+            <h2>📋 How to Use This Test</h2>
+            <p>
+                <strong>Instructions:</strong><br>
+                1. Place this HTML file in your repository root (same level as README.md)<br>
+                2. Make sure the <code>assets/</code> folder with all SVG files is in the same directory<br>
+                3. Open this file in your web browser<br>
+                4. All 6 images below should display correctly
+            </p>
+        </div>
+        
+        <!-- Image 1 -->
+        <div class="image-section">
+            <h3>1. Hero Banner</h3>
+            <div class="image-container">
+                <img src="assets/hero-banner.svg" alt="Hero Banner" onerror="this.parentElement.innerHTML='<div class=\'status-badge error\'>❌ Failed to Load: hero-banner.svg</div><div class=\'error-info\'><h4>Troubleshooting:</h4><p>• Check that <code>assets/hero-banner.svg</code> exists<br>• Verify the file name is exactly <code>hero-banner.svg</code> (lowercase, with hyphen)<br>• Make sure this HTML file is at the same level as the assets/ folder</p></div>';">
+                <div class="status-badge success">✅ Loaded Successfully</div>
+            </div>
+        </div>
+        
+        <!-- Image 2 -->
+        <div class="image-section">
+            <h3>2. Concepts Overview</h3>
+            <div class="image-container">
+                <img src="assets/concepts-overview.svg" alt="Concepts Overview" onerror="this.parentElement.innerHTML='<div class=\'status-badge error\'>❌ Failed to Load: concepts-overview.svg</div><div class=\'error-info\'><h4>Troubleshooting:</h4><p>• Check that <code>assets/concepts-overview.svg</code> exists<br>• Verify the file name spelling</p></div>';">
+                <div class="status-badge success">✅ Loaded Successfully</div>
+            </div>
+        </div>
+        
+        <!-- Image 3 -->
+        <div class="image-section">
+            <h3>3. Data Structures</h3>
+            <div class="image-container">
+                <img src="assets/data-structures.svg" alt="Data Structures" onerror="this.parentElement.innerHTML='<div class=\'status-badge error\'>❌ Failed to Load: data-structures.svg</div><div class=\'error-info\'><h4>Troubleshooting:</h4><p>• Check that <code>assets/data-structures.svg</code> exists<br>• Verify the file name spelling</p></div>';">
+                <div class="status-badge success">✅ Loaded Successfully</div>
+            </div>
+        </div>
+        
+        <!-- Image 4 -->
+        <div class="image-section">
+            <h3>4. Learning Roadmap</h3>
+            <div class="image-container">
+                <img src="assets/learning-roadmap.svg" alt="Learning Roadmap" onerror="this.parentElement.innerHTML='<div class=\'status-badge error\'>❌ Failed to Load: learning-roadmap.svg</div><div class=\'error-info\'><h4>Troubleshooting:</h4><p>• Check that <code>assets/learning-roadmap.svg</code> exists<br>• Verify the file name spelling</p></div>';">
+                <div class="status-badge success">✅ Loaded Successfully</div>
+            </div>
+        </div>
+        
+        <!-- Image 5 -->
+        <div class="image-section">
+            <h3>5. Pattern Examples</h3>
+            <div class="image-container">
+                <img src="assets/pattern-examples.svg" alt="Pattern Examples" onerror="this.parentElement.innerHTML='<div class=\'status-badge error\'>❌ Failed to Load: pattern-examples.svg</div><div class=\'error-info\'><h4>Troubleshooting:</h4><p>• Check that <code>assets/pattern-examples.svg</code> exists<br>• Verify the file name spelling</p></div>';">
+                <div class="status-badge success">✅ Loaded Successfully</div>
+            </div>
+        </div>
+        
+        <!-- Image 6 -->
+        <div class="image-section">
+            <h3>6. Footer Badge</h3>
+            <div class="image-container">
+                <img src="assets/footer-badge.svg" alt="Footer Badge" onerror="this.parentElement.innerHTML='<div class=\'status-badge error\'>❌ Failed to Load: footer-badge.svg</div><div class=\'error-info\'><h4>Troubleshooting:</h4><p>• Check that <code>assets/footer-badge.svg</code> exists<br>• Verify the file name spelling</p></div>';">
+                <div class="status-badge success">✅ Loaded Successfully</div>
+            </div>
+        </div>
+        
+        <!-- Checklist -->
+        <div class="checklist">
+            <h3>✅ Pre-Upload Checklist</h3>
+            <p style="margin-bottom: 15px; color: #166534;">If all images loaded successfully above, you're ready to upload to GitHub!</p>
+            <ul>
+                <li>All 6 SVG files are in the <code>assets/</code> folder</li>
+                <li>File names are exactly as specified (lowercase, with hyphens)</li>
+                <li>This test file showed "✅ Loaded Successfully" for all images</li>
+                <li>The <code>assets/</code> folder is at the same level as <code>README.md</code></li>
+                <li>Ready to run: <code>git add assets/</code> and <code>git push</code></li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Next Steps:</strong></p>
+            <p>If all images loaded, upload to GitHub with:</p>
+            <code style="display: block; margin: 10px 0; padding: 15px; background: #1f2937; color: #fff; border-radius: 8px;">
+                git add assets/<br>
+                git add README.md<br>
+                git commit -m "Add visual assets"<br>
+                git push origin main
+            </code>
+            <p style="margin-top: 20px;">🐍 Python Programming - From Zero to Hero</p>
+        </div>
+    </div>
+</body>
+</html>
